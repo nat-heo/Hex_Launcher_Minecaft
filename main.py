@@ -78,7 +78,7 @@ version_menu = ctk.CTkOptionMenu(
     corner_radius=20,
     values=get_versions(),
     variable=version_var,
-    width=WIDGET_WIDTH  # genişlik burada işe yarayacak
+    width=WIDGET_WIDTH
 )
 version_menu.place(relx=0.5, y=312, anchor="center")
 
