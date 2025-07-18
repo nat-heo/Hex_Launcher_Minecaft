@@ -57,7 +57,7 @@ font2 = ctk.CTkFont(family="Impact", size=29)
 frame1 = ctk.CTkFrame(master=root, width=300, height=500, corner_radius=50, bg_color="#232525",fg_color="#232525")
 frame1.place(x=22, y=40)
 
-logo_image_1 = Image.open("icon.png")  # Dosya adını kendi logona göre değiştir
+logo_image_1 = Image.open("icon.png")
 logo_image_2 = CTkImage(light_image=logo_image_1, size=(200, 200)) 
 logo_label = ctk.CTkLabel(frame1, text="", image=logo_image_2)
 logo_label.place(relx=0.5, y=120, anchor="center")
