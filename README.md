@@ -21,4 +21,17 @@ Launcher, yalnızca sürüm başlatıcı işlevi görür ve tüm dosyalar `minec
 Bu başlatıcı korsan/crack kullanımı desteklemez.  
 Launcher'ı indiren kullanıcılar, tüm yasal sorumlulukların kendilerine ait olduğunu kabul eder.
 
+##Legal Disclaimer
+This project is not affiliated with Mojang Studios or Microsoft in any way.
+Minecraft is a registered trademark of Mojang Studios.
+
+This launcher has been developed solely for educational, experimental, and personal use.
+It is not a replacement for the official Minecraft launcher and is not supported or endorsed by Mojang/Microsoft.
+
+This project does not distribute any game files owned by Mojang.
+The launcher only serves as a version starter, and all files are legally obtained through Mojang's servers using the open-source library minecraft_launcher_lib.
+
+This launcher does not support piracy or cracked usage.
+By downloading and using this launcher, users accept that they are fully responsible for complying with all legal requirements.
+
 
