@@ -21,7 +21,7 @@ Launcher, yalnızca sürüm başlatıcı işlevi görür ve tüm dosyalar `minec
 Bu başlatıcı korsan/crack kullanımı desteklemez.  
 Launcher'ı indiren kullanıcılar, tüm yasal sorumlulukların kendilerine ait olduğunu kabul eder.
 
-##Legal Disclaimer
+## Legal Disclaimer
 
 This project is not affiliated with Mojang Studios or Microsoft in any way.
 Minecraft is a registered trademark of Mojang Studios.
