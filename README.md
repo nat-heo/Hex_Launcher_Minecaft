@@ -23,16 +23,16 @@ Launcher'ı indiren kullanıcılar, tüm yasal sorumlulukların kendilerine ait 
 
 ## Legal Disclaimer
 
-This project is not affiliated with Mojang Studios or Microsoft in any way.
+This project is in no way affiliated with Mojang Studios or Microsoft.
 Minecraft is a registered trademark of Mojang Studios.
 
-This launcher has been developed solely for educational, experimental, and personal use.
-It is not a replacement for the official Minecraft launcher and is not supported or endorsed by Mojang/Microsoft.
+This launcher was developed for educational and experimental use only.
+It is not a replacement for the official Minecraft launcher and is not endorsed by Mojang/Microsoft.
 
-This project does not distribute any game files owned by Mojang.
-The launcher only serves as a version starter, and all files are legally obtained through Mojang's servers using the open-source library minecraft_launcher_lib.
+No Mojang game files are distributed as part of the project.
+The launcher functions solely as a version launcher, and all files are obtained legally from Mojang servers via the open-source library minecraft_launcher_lib.
 
-This launcher does not support piracy or cracked usage.
-By downloading and using this launcher, users accept that they are fully responsible for complying with all legal requirements.
+This launcher does not support pirated/cracked content.
+By downloading the launcher, users agree to bear all legal responsibility.
 
 
