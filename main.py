@@ -6,6 +6,7 @@ from PIL import Image
 import minecraft_launcher_lib
 import subprocess
 import threading
+import ctypes
 import json
 import os
 
@@ -20,7 +21,7 @@ def load_user_log():
 
 game_settings = load_user_log()
 
-minecraft_directory = "C:/hexlauncher"
+minecraft_directory = "C:/.hexlauncher"
 
 if not os.path.exists(minecraft_directory):
     os.makedirs(minecraft_directory)
@@ -57,14 +58,29 @@ def launch_minecraft():
 
     messagebox.showinfo("Hex Launcher", "Minecraft başlatılıyor...")
     
-    def run_minecraft():
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-        for line in process.stdout:
-            log_box.insert(END, line)
-            log_box.see(END)
-        process.stdout.close()
+    CREATE_NO_WINDOW = 0x08000000
+    def run_minecraft(command):
+        try:
+            command[0] = command[0].replace("java.exe", "javaw.exe")
 
-    threading.Thread(target=run_minecraft, daemon=True).start()
+            process = subprocess.Popen(
+                command,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                creationflags=CREATE_NO_WINDOW
+            )
+
+            for line in process.stdout:
+                log_box.insert(END, line)
+                log_box.see(END)
+
+            process.stdout.close()
+        except Exception as e:
+            log_box.insert(END, f"Hata oluştu: {str(e)}\n")
+            log_box.see(END)
+
+    threading.Thread(target=lambda: run_minecraft(command), daemon=True).start()
 
 root = ctk.CTk()
 root.title("Hex Launcher")
