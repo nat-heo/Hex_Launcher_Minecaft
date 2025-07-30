@@ -117,7 +117,7 @@ def start_main_window():
     bg_image1 = bg_image1.resize((1250, 700))
     bg_photo1 = ImageTk.PhotoImage(bg_image1)
     bg_label1 = Label(root, image=bg_photo1)
-    bg_label1.place(x=-3, y=-3)
+    bg_label1.place(x=625, y=350,anchor="center")
 
     font2 = ctk.CTkFont(family="Impact", size=29)
 
@@ -138,7 +138,7 @@ def start_main_window():
         variable=version_var,
         width=120
     )
-    version_menu.place(x=510, y=460)
+    version_menu.place(x=560, y=470,anchor="center")
 
     playbtn = ctk.CTkButton(
         root,
@@ -151,7 +151,7 @@ def start_main_window():
         command=launch_minecraft,
         width=50
     )
-    playbtn.place(x=535, y=500,)
+    playbtn.place(x=560, y=520,anchor="center")
 
     extbtn = ctk.CTkButton(
         root,
@@ -163,7 +163,7 @@ def start_main_window():
         command=ext,
         width=15
     )
-    extbtn.place(x=1090, y=10)
+    extbtn.place(x=1100, y=20,anchor="center")
     
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     log_box = ctk.CTkTextbox(
@@ -211,7 +211,7 @@ bg_image = Image.open("bg_1.png")
 bg_image = bg_image.resize((1250, 700))
 bg_photo = ImageTk.PhotoImage(bg_image)
 bg_label = Label(nickname_window, image=bg_photo)
-bg_label.place(x=-3, y=-3)
+bg_label.place(x=625, y=350,anchor="center")
 
 font2 = ctk.CTkFont(family="Impact", size=29)
 WIDGET_WIDTH = 180
@@ -222,7 +222,7 @@ nameent = ctk.CTkEntry(
     placeholder_text="Nickname",
     bg_color="#2B2A2A",
     width=WIDGET_WIDTH)
-nameent.place(x=475, y=300)
+nameent.place(x=560, y=320,anchor="center")
 username_value = game_settings.get("username", "")
 if username_value:
     nameent.insert(0, username_value)
@@ -248,7 +248,7 @@ next_button = ctk.CTkButton(
     command=continue_to_main,
     width=150
     )
-next_button.place(x=490, y=350)
+next_button.place(x=560, y=370,anchor="center")
 
 def ext2():
     nickname_window.destroy()
@@ -262,6 +262,6 @@ extbtn2 = ctk.CTkButton(
     command=ext2,
     width=15
     )
-extbtn2.place(x=1090, y=10)
+extbtn2.place(x=1100, y=20,anchor="center")
 
 nickname_window.mainloop()
